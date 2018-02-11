@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/imageserver"
+        android:layout_width="140dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:id="@+id/txtserver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageserver"
+        android:layout_marginTop="36dp"
+        android:visibility="gone"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/syn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/movie"
+        android:layout_below="@+id/movie"
+        android:layout_marginTop="58dp"
+        android:visibility="gone"
+        android:text="synopsis" />
+
+    <TextView
+        android:id="@+id/producers"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageserver"
+        android:layout_marginTop="39dp"
+        android:layout_toRightOf="@+id/musics"
+        android:text="producer" />
+
+    <TextView
+        android:id="@+id/directors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageserver"
+        android:layout_below="@+id/imageserver"
+        android:layout_marginTop="64dp"
+        android:visibility="gone"
+        android:text="director" />
+
+    <TextView
+        android:id="@+id/musics"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageserver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:text="music" />
+
+    <TextView
+        android:id="@+id/casts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+          android:textStyle="italic"
+        android:layout_alignBottom="@+id/imageserver"
+        android:layout_alignLeft="@+id/movie"
+        android:layout_marginBottom="65dp"
+        android:text="cast" />
+
+    <TextView
+        android:id="@+id/movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/casts"
+         android:textColor="#fff"
+        android:textStyle="italic"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imageserver"
+        android:text="movie" />
+
+    <TextView
+        android:id="@+id/ids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+         android:textColor="#fff"
+        android:layout_alignBottom="@+id/imageserver"
+        android:layout_alignLeft="@+id/casts"
+        android:layout_marginBottom="32dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/statuss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageserver"
+        android:layout_alignLeft="@+id/casts"
+        android:layout_marginBottom="29dp"
+        android:text="status"
+       
+        android:textColor="#fff"
+        android:textStyle="italic" />
+
+</RelativeLayout>

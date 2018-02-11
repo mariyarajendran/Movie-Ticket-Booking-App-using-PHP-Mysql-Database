@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="#795548"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Androidmain" >
+
+    <Button
+        android:id="@+id/updatenewmovies"
+        style="?android:attr/buttonStyleSmall"
+         android:background="#dd2c00"
+        android:layout_width="fill_parent"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/manageattendence"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="131dp"
+        android:text="Add New Movies" />
+
+    <Button
+        android:id="@+id/manageattendence"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+         android:background="#dd2c00"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/updatenewmovies"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:text="Manage Booked Tickets" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/admin" />
+
+</RelativeLayout>

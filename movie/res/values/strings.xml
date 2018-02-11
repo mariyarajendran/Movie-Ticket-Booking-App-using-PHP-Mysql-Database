@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Movie</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_front">Front</string>
+    <string name="title_activity_back">Back</string>
+    <string name="title_activity_upper">Upper</string>
+    <string name="title_activity_list">List</string>
+    <string name="title_activity_lists">Lists</string>
+    <string name="title_activity_booking">Booking</string>
+    <string name="title_activity_start">Start</string>
+    <string name="title_activity_image">Image</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_loadimageserver">Loadimageserver</string>
+    <string name="title_activity_load">Load</string>
+    <string name="title_activity_customview">Customview</string>
+    <string name="title_activity_sam">Sam</string>
+    <string name="title_activity_seat_booking">SeatBooking</string>
+    <string name="title_activity_fake_seat">FakeSeat</string>
+    <string name="aboutseat">Choose your seat here for your comfortable/n
+        click the below Button</string>
+    <string name="title_activity_secondseatfake">Secondseatfake</string>
+    <string name="title_activity_demo_book">DemoBook</string>
+    <string name="title_activity_sss">SSS</string>
+    <string name="title_activity_betweenseat">Betweenseat</string>
+    <string name="title_activity_payments">Payments</string>
+    <string name="title_activity_adminpage">Adminpage</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="title_activity_admincustomview">Admincustomview</string>
+    <string name="title_activity_androidmain">Androidmain</string>
+    <string name="title_activity_adminlogin">Adminlogin</string>
+    <string name="title_activity_managemoviesadmin">Managemoviesadmin</string>
+    <string name="title_activity_adminpreview">Adminpreview</string>
+
+</resources>

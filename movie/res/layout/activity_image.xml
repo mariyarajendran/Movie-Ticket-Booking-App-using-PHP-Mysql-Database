@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+  android:background="#795548"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Image" >
+    
+     
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="39dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:hint="Date (eg 2014-01-02) "
+        android:textStyle="italic" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/cast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Cast"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+         android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cast"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Music"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/music"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Genre"
+         android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/director"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/genre"
+        android:layout_marginTop="28dp"
+         android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:hint="Director"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/producer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/director"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Producer"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/synopsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+         android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/producer"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Synopsis"
+        android:textStyle="italic" />
+
+    <Spinner
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Status"
+       
+      
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Movie"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/choose"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/movie"
+        android:layout_alignParentBottom="true"
+        android:background="#dd2c00"
+        android:text="Choose Image"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/upload"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/choose"
+        android:layout_alignBottom="@+id/choose"
+        android:layout_alignRight="@+id/insert"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:background="#dd2c00"
+        android:text="Upload Image"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/insert"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#dd2c00"
+        android:text="Insert"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/preview"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#dd2c00"
+        android:text="Preview"
+        android:textColor="#fff" />
+       
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

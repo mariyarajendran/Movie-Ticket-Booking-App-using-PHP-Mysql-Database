@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/imgs"
+        android:layout_width="140dp"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:id="@+id/lst2genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lst2music"
+        android:layout_centerVertical="true"
+        android:text="genre"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lst2producer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lst2director"
+        android:layout_below="@+id/lst2director"
+        android:layout_marginTop="14dp"
+        android:text="producer"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lst2synopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lst2producer"
+        android:layout_below="@+id/lst2producer"
+        android:layout_marginTop="23dp"
+        android:text="synopsis"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lst2date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/lst2synopsis"
+        android:layout_below="@+id/lst2synopsis"
+        android:layout_marginTop="18dp"
+        android:text="date"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lst2director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lst2movie"
+        android:layout_marginTop="31dp"
+        android:text="director"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lst2music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/lst2date"
+        android:layout_below="@+id/lst2date"
+        android:layout_marginTop="16dp"
+        android:text="music"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lst2movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lst2cast"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/imgs"
+        android:text="movie"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lst2cast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_alignBottom="@+id/imgs"
+        android:layout_alignLeft="@+id/lst2movie"
+        android:layout_marginBottom="68dp"
+        android:text="cast" />
+
+</RelativeLayout>

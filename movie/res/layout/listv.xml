@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/lstimgs"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/lstdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lstimgs"
+        android:layout_alignRight="@+id/lstmovie"
+        android:layout_marginBottom="16dp"
+        android:text="date"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lstmusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/lstcast"
+        android:text="music"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lstgenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/lstmusic"
+        android:layout_below="@+id/lstmusic"
+        android:layout_marginTop="14dp"
+        android:text="genre"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lstsynopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lstimgs"
+        android:layout_centerHorizontal="true"
+        android:text="producer"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lstdirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/lstsynopsis"
+        android:layout_below="@+id/lstsynopsis"
+        android:layout_marginTop="20dp"
+        android:text="director"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lstproducer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lstimgs"
+        android:layout_below="@+id/lstgenre"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="19dp"
+        android:text="synopsis"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lstmovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lstcast"
+        android:layout_alignLeft="@+id/lstcast"
+        android:text="movie"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lstcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lstimgs"
+        android:layout_marginBottom="67dp"
+        android:layout_marginLeft="31dp"
+        android:layout_toRightOf="@+id/lstimgs"
+        android:text="cast" />
+
+    <TextView
+        android:id="@+id/lstmovid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/lstmovie"
+        android:layout_marginBottom="30dp"
+        android:text="TextView" />
+
+</RelativeLayout>

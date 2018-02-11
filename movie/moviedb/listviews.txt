@@ -1,0 +1,46 @@
+-- phpMyAdmin SQL Dump
+-- version 3.1.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Oct 18, 2016 at 11:42 PM
+-- Server version: 5.1.30
+-- PHP Version: 5.2.8
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `movie`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `listviews`
+--
+
+CREATE TABLE IF NOT EXISTS `listviews` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` date NOT NULL,
+  `cast` text NOT NULL,
+  `music` text NOT NULL,
+  `genre` text NOT NULL,
+  `director` text NOT NULL,
+  `producer` text NOT NULL,
+  `synopsis` text NOT NULL,
+  `movie` text NOT NULL,
+  `image` varchar(300) NOT NULL,
+  `status` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=100 ;
+
+--
+-- Dumping data for table `listviews`
+--
+
+INSERT INTO `listviews` (`id`, `date`, `cast`, `music`, `genre`, `director`, `producer`, `synopsis`, `movie`, `image`, `status`) VALUES
+(1, '2016-09-07', 'Cast :Vikram,Nayantara,Nithya Menen,Nassar,Thambi,Ramaia', 'Music :Harris Jayaraj', 'Genre :Feature film soundtrack', 'Director :Anand Shankar', 'Producer :Shibu Thameens', 'Synopsis :Iru Mugan is a 2016 Indian Tamil science fiction action thriller film written and directed by Anand Shankar', 'Movie :Iru Mugan', 'http://10.0.2.2/MovieLogin/uploads/9.png', 'Available'),
+(3, '2016-08-02', 'Cast :Vijay Sethupathi,Tamannaah,Aishwarya,Rajesh,Srusht', 'Music :Yuvan Shankar Raja', 'Genre :Feature film soundtrack', 'Director :Seenu Ramasamy', 'Producer :R. K. Suresh', 'Synopsis :A violent feud between brothers shadows a man (Vijay Sethupathi) and casts a pall over his future as a doctor.', 'Movie :Dharma Durai.', 'http://10.0.2.2/MovieLogin/uploads/15.png', 'Available'),
+(99, '2019-01-01', 'china', 'hjjk', 'kjkj', 'jkkj', 'kj', 'kj', 'china karan', 'http://10.0.2.2/MovieLogin/uploads/99.png', 'Available'),
+(7, '2015-12-11', 'Cast :Atharvaa,Sri Divya,Jayaprakash,Naren.', 'Music :G. V. Prakash Kumar', 'Genre :Feature film soundtrack', 'Director :Ravi Arasu', 'Producer :S. Michael Rayappan', 'Synopsis :Eetti is a 2015 Tamil language action film directed by Ravi Arasu and produced by S. Michael Rayappan and Vetrimaaran. The film features Atharvaa and Sri Divya in the lead roles, while G. V. Prakash Kumar composes the film''s music.', 'Movie :Eetti', 'http://10.0.2.2/MovieLogin/uploads/18.png', 'Available'),
+(8, '2016-07-22', 'Cast :Rajinikanth,Winston Chao,Radhika Apte.', 'Music :Santhosh Narayanan', 'Genre :Feature film soundtrack', 'Director :Pa. Ranjith', 'Producer :Kalaipuli S. Thanu', 'Synopsis :An aged gangster (Rajinikanth) tries to protect his family and his business from his enemies.', 'Movie :Kabali.', 'http://10.0.2.2/MovieLogin/uploads/19.png', 'Unavailable');

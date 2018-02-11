@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.movie"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="11" />
+
+    <application
+        android:icon="@drawable/moo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+           android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.movie.Start"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.movie.Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Front"
+            android:label="@string/title_activity_front" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Back"
+            android:label="@string/title_activity_back" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Upper"
+            android:label="@string/title_activity_upper" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Image"
+            android:label="@string/title_activity_lists" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Booking"
+            android:label="@string/title_activity_booking" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Androidmain"
+            android:label="@string/title_activity_start" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Movie"
+            android:label="@string/title_activity_image" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Load"
+            android:label="@string/title_activity_loadimageserver" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Loadimageserver"
+            android:label="@string/title_activity_load" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Customview"
+            android:label="@string/title_activity_customview" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Sam"
+            android:label="@string/title_activity_sam" >
+        </activity>
+        <activity
+            android:name="com.example.movie.SeatBooking"
+            android:label="@string/title_activity_seat_booking" >
+        </activity>
+        <activity
+            android:name="com.example.movie.FakeSeat"
+            android:label="@string/title_activity_fake_seat" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Secondseatfake"
+            android:label="@string/title_activity_secondseatfake" >
+        </activity>
+        <activity
+            android:name="com.example.movie.DemoBook"
+            android:label="@string/title_activity_demo_book" >
+        </activity>
+        <activity
+            android:name="com.example.movie.SSS"
+            android:label="@string/title_activity_sss" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Betweenseat"
+            android:label="@string/title_activity_betweenseat" >
+        </activity>
+        <activity
+            android:name="com.example.movie.List"
+            android:label="@string/title_activity_payments" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Payments"
+            android:label="@string/title_activity_adminpage" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Signup"
+            android:label="@string/title_activity_signup" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Admincustomview"
+            android:label="@string/title_activity_admincustomview" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Adminpage"
+            android:label="@string/title_activity_androidmain" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Adminlogin"
+            android:label="@string/title_activity_adminlogin" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Managemoviesadmin"
+            android:label="@string/title_activity_managemoviesadmin" >
+        </activity>
+        <activity
+            android:name="com.example.movie.Adminpreview"
+            android:label="@string/title_activity_adminpreview" >
+        </activity>
+    </application>
+
+</manifest>
